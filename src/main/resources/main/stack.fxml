@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.StackController">
+<VBox alignment="CENTER" prefHeight="384.0" prefWidth="392.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.StackController">
     <children>
-        <Label text="Stack Commands" />
-        <Button onAction="#handlePushButton" text="Push" />
-        <Button onAction="#handlePopButton" text="Pop" />
+        <Label text="Stack Animation" />
+        <VBox fx:id="stackVBox" alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="300.0" style="-fx-border-color: black;" />
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <TextField fx:id="inputField" promptText="Enter a value" />
+                <Button onAction="#handlePushButton" text="Push" />
+                <Button onAction="#handlePopButton" text="Pop" />
+            </children>
+        </HBox>
+        <Button onAction="#handleMainMenuButton" text="Main Menu" />
     </children>
 </VBox>
