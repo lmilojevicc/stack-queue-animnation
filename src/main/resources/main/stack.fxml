@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="384.0" prefWidth="392.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.StackController">
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="420.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.StackController">
     <children>
         <Label text="Stack Animation" />
         <VBox fx:id="stackVBox" alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="300.0" spacing="3.0" style="-fx-border-color: black;" />
@@ -15,6 +15,7 @@
                 <TextField fx:id="inputField" promptText="Enter a value" />
                 <Button onAction="#handlePushButton" text="Push" />
                 <Button onAction="#handlePopButton" text="Pop" />
+            <Button onAction="#handleFindButton" text="Find" />
             </children>
         </HBox>
         <Button onAction="#handleMainMenuButton" text="Main Menu" />
