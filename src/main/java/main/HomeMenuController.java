@@ -13,7 +13,7 @@ import java.io.IOException;
 public class HomeMenuController {
     @FXML
     private void handleStackButton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("stack.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("stack.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
@@ -22,7 +22,7 @@ public class HomeMenuController {
 
     @FXML
     private void handleQueueButton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("queue.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("queue.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
